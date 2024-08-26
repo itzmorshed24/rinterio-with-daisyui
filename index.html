@@ -27,7 +27,7 @@
           extend: {
             colors: {
               "rinterio-primary-btn": "#ABEF5F",
-              "rinterio-primary-bg": "rgba(231, 111, 81, 0.1)",
+              "rinterio-primary-bg": "#ABEF5F",
             },
           },
         },
@@ -40,10 +40,84 @@
         font-family: "Manrope", sans-serif;
       }
     </style>
+    <!-- Fonts Awesome -->
+    <script
+      src="https://kit.fontawesome.com/61b2f6f414.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
-  <body>
-    <header></header>
+  <body class="font-manrope">
+    <!-- Header Section -->
+    <header class="bg-gradient-to-t from-[#fcfbfba5] to-[#76737314]">
+      <!-- Navbar Section -->
+      <nav class="md:container md:mx-auto p-4">
+        <div class="navbar">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="flex items-center">
+              <div class="w-9 h-9 bg-rinterio-primary-bg rounded-full relative">
+                <i
+                  class="fa-solid fa-arrow-right -rotate-45 text-xl absolute top-1 left-2"
+                ></i>
+              </div>
+              <h2 class="text-3xl font-extrabold ml-2">Rinterio</h2>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu-horizontal px-1">
+              <li class="pr-9"><a class="font-extrabold">Home</a></li>
+              <li class="pr-9 text-[#737373]"><a>Services</a></li>
+              <li class="pr-9 text-[#737373]"><a>Portfolio</a></li>
+              <li class="pr-9 text-[#737373]"><a>Blogs</a></li>
+              <li class="text-[#737373]"><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end hidden lg:flex items-center">
+            <i
+              class="fa-solid fa-magnifying-glass mr-4 bg-white p-3 rounded-full"
+            ></i>
+            <i
+              class="fa-solid fa-cart-shopping mr-4 bg-white p-3 rounded-full"
+            ></i>
+            <a
+              class="bg-rinterio-primary-bg py-3 px-5 rounded-[32px] text-[#1C1C1C] text-xl font-extrabold"
+              >Book Consult
+              <i
+                class="fa-solid fa-arrow-right -rotate-45 text-xl w-7 h-7 bg-black rounded-full text-white px-1 ml-1"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </nav>
+    </header>
     <main></main>
     <footer></footer>
   </body>
